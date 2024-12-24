@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Objek dengan TensorFlow.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Judul Website -->
+    <header>
+        <h1>Deteksi Objek dengan TensorFlow.js</h1>
+    </header>
+    
+    <!-- Div untuk menampilkan hasil -->
+    <div id="result">Hasil deteksi akan muncul setiap 5 detik...</div>
+    
+    <!-- Video dan Canvas -->
+    <video id="webcam" autoplay muted playsinline width="640" height="480"></video>
+    <canvas id="overlay" width="640" height="480"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
